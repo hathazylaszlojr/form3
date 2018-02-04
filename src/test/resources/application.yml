@@ -1,0 +1,5 @@
+db:
+    driver: hsqldb
+    type: mem
+    endpoint: jdbc:${db.driver}:${db.type}:${db.path}
+    path: mymemdb

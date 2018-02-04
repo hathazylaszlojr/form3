@@ -1,0 +1,7 @@
+db:
+    driver: hsqldb
+    type: file
+    endpoint: jdbc:${db.driver}:${db.type}:${db.path}
+    aes:
+        key: 547ce2174fdd9c55d7acd574863a3179
+    path: /tmp/db
