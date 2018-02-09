@@ -1,7 +1,9 @@
 package com.form3.hometest.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.form3.hometest.entity.Payment;
 import lombok.AllArgsConstructor;
+
 
 import java.util.List;
 
@@ -9,5 +11,5 @@ import java.util.List;
 public class PaymentsResponse {
     
     @JsonProperty("data")
-    private List<Payment> payments;
+    private List<PaymentVO> paymentVOS;
 }
