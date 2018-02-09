@@ -1,6 +1,7 @@
 package com.form3.hometest.configuration;
 
 import com.form3.hometest.entity.Account;
+import com.form3.hometest.entity.Charge;
 import com.form3.hometest.entity.Payment;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,6 +22,7 @@ public class PersistenceConfiguration {
 
         sessionBuilder.addAnnotatedClasses(Account.class);
         sessionBuilder.addAnnotatedClasses(Payment.class);
+        sessionBuilder.addAnnotatedClasses(Charge.class);
 
         return sessionBuilder.buildSessionFactory();
     }
